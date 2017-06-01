@@ -1,0 +1,502 @@
+.*{
+    box-sizing: border-box;
+}
+
+html, body, ul {	
+    margin:0;
+    padding:0;
+    /*font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+	color:rgb(182,209,146);
+	display:block;
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("fontawesome-webfont.woff");
+}
+
+
+body {
+    background: white;
+}
+
+.container{
+        position: relative;
+        overflow: hidden;
+        width:100vw;        
+}
+
+/* ------------------ Header Style ---------------------------------------------*/
+.main-header{
+	width:100%;
+	position:relative;
+	float:left;
+	margin-bottom: 1em;
+}
+
+.logo {
+	position:relative;
+	width:16%;
+	height: auto;
+	float:left;
+}
+
+
+.main-nav{
+	position:relative;
+	overflow: hidden;
+	float:left;
+	width: 79%;
+	margin: 8% 1% 0% 1%;
+	/*padding: 9% 2% 5% 2%;*/
+}
+
+.main-login {
+	   width:100%;
+	   overflow: hidden;
+}
+
+
+.bar-login{
+	width:95%;    
+    list-style-type: none;
+    display: flex;
+    flex-direction:row ;  
+    justify-content: flex-end;
+}
+
+.bar-login  li{
+	padding: 0em;
+
+}
+
+.bar-login a {
+    display: block;
+    color: rgb(182,209,146); 
+    font-weight: bold;
+    text-decoration: none;
+    text-align: right;  
+    padding:0 1em; 
+}
+
+.bar-login a:hover{
+    color: #47473D;
+}
+
+
+.bar-nav{
+	width:100%;
+    background-color: #47473D;
+  
+    list-style-type: none;
+
+    display: flex;
+    flex-flow:row wrap;  
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bar-nav li{
+	padding: 0em;
+	width:5%;
+}
+
+
+.icono{
+	flex-grow: 1;
+  	font-family: "FontAwesome", sans-serif;
+  	font-size: 1.2em;
+  	padding: 1em 1%;
+}
+
+.descripcion{
+	flex-grow:2;
+}
+
+.bar-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+    padding: 1em 1%;
+}
+
+.bar-nav a:hover{
+    background-color: rgb(182,209,146);
+}
+
+
+/* ------------------- Banner --------------------------------- */
+
+.banner{
+	width: 98%;
+	position:relative;
+	overflow: hidden;
+	margin-left: 2%;
+}
+
+.banner img{
+	width:24%;
+	height:auto; 
+	float:left;
+}
+
+/*---------------- Frases marketing ----------------------------------*/
+.frases{
+
+	width: 90%;
+	position:relative;
+	
+	margin: 2%;
+	padding:2%;
+
+	background-color: rgb(240,239,239); /* light-light-grey;*/
+	display:flex;
+	flex-direction: column;		
+
+}
+
+.frases img{
+	width: 200px;
+	height: 200px;
+	border-radius:50%;
+}
+
+.frases .texto {
+	width:30%;
+	padding:0 1em;
+
+}
+
+.frase1 {
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.frase2 {
+	display:flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+
+.frase3{
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+
+
+
+/* ---------------------------- Promociones, destacados, etc. DIV  inferior -----------------*/
+.main-promo{
+    position:relative;
+    width:100%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.promotion{
+    width:20%;
+    padding: 1em;
+}
+
+
+.main-promo h2{
+    text-align:center;
+    color:rgb(182,209,146);
+}
+
+.main-promo img{    
+    width:100%;
+    height:auto;
+}
+
+
+/*---------------------- Footer ------------------------*/
+.main-footer{
+	/*background-color: rgb(240,239,239); light-light-grey*/
+	max-width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-top: solid;
+	border-color:#47473D; /* grey*/
+}
+
+.main-footer h3 {
+	display: block;  
+    color:#47473D; /* grey*/
+    text-decoration: none;
+    text-align: center;   
+}
+
+.footer-menu{
+	list-style-type: none;
+	display:flex;	
+	flex-direction: row;	
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.footer-links{
+	display:flex;
+	list-style-type: none;
+	flex-direction: column;	
+	justify-content: flex-start;
+	align-items: center;
+	align-content: space-around;
+}
+
+.footer-links a{
+	color: rgb(182,209,146);  /*verde*/
+}
+
+.footer-links a:hover{
+    text-decoration: underline;
+    color:#47473D; /* grey*/
+}
+
+/*---------------------- Preguntas Frecuentes ------------------------*/
+.container-faq {
+	width:80%;
+	margin-left: 5%;
+}
+
+
+.question-list{
+	margin-left:10%;
+	text-decoration:none;
+}
+
+/*---------------------- fin Preguntas Frecuentes --------------------*/
+
+/* ----- Formulario de ingreso ------ */
+
+.container-formulario{
+	position: relative;
+    overflow: hidden;
+    width:100%;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    
+}
+.container-formulario h1{
+	margin-left: 2%;
+}
+
+.sign-in-container{
+		
+		position: relative;
+        overflow: hidden;
+        width:100%;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        align-items: flex-start;
+}
+
+.cliente-antiguo, .cliente-nuevo, .crear-cliente{
+		
+		border-style:solid;
+		border-color: #47473D; /* grey*/
+		width: 40%;
+		padding:2%;
+		position: relative;
+}
+
+.crear-cliente{
+			float:left;
+			width: 60%;
+}
+
+
+/* ------------------ Formulario cliente nuevo -------------------*/
+
+.crear-cliente-container{
+		
+		position: relative;
+        overflow: hidden;
+        width:100%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+}
+
+.mensaje-error {
+	width:60%;
+	margin-top: 0;
+	margin-right:20%;
+	padding-top: 0;
+	text-align:center;
+}
+.mensaje-error ul {
+	color: red;
+}
+.mensaje-error h3{
+	margin-top: 0;
+	padding-top: 0:;
+
+}
+
+.form-alta .error {
+	color: red;
+}
+
+.form-alta label {
+	display:inline-block;
+	min-width:6em;
+	margin-right: 0;
+}
+
+.form-alta input {
+	display:inline-block;
+	min-width:15em;
+	margin-right: 2em;
+}
+.form-alta select {
+	display:inline-block;
+	margin-right: 5em;
+}
+
+ .form-alta .botones {
+	padding:1em;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.form-alta .botones button {
+	margin:0 3em;
+	padding: 1em;
+}
+
+.mensaje h2{
+	text-align: center;
+}
+
+.btn_continuar a {
+	text-decoration:none;
+	color:black;
+	border: 2px solid black;
+	background-color: rgb(240,239,239);
+	padding: 0 1em;
+	margin: 0 46%;
+}
+
+@media only screen and (max-width : 1024px) {
+
+	
+
+}
+
+@media only screen and (max-width : 768px) {
+
+	
+	.logo {
+		position:relative;
+		width:26%;
+		height: auto;
+	    display: inline-block;
+		margin-left:37%;	
+	}
+
+	.main-nav{
+		position:relative;
+		width: 92%;
+	    height:auto;
+		margin: 0% 2%;
+		padding:0;
+	
+	}
+
+	.bar-nav li{
+		width:25%;
+	}
+
+	.icono{
+	    order:1;
+	    flex-grow:1;
+	}
+
+	.descripcion{
+	    order:2;
+	    flex-grow:0.8;
+	}
+	
+	.banner{
+		display:none;
+	}
+
+	.frases{
+		display:none;
+	}
+
+	.promotion{
+	    width:40%;
+	    padding: 1em;
+	}
+
+}
+
+@media only screen and (max-width : 480px) {
+
+	.logo {
+		
+		width: 33%;
+		height: auto;
+		margin-left:33%;	
+	}	
+	
+	.promotion{
+	    width:80%;
+	    padding: 1em;
+	}
+
+
+}
+
+@media only screen and (max-width : 360px) {
+
+.bar-nav{
+	flex-flow:column;  
+    justify-content: flex-start;
+    align-items: center;
+	}
+
+	.bar-nav li{
+		width:100%;
+	}
+
+	.bar-nav a{
+		padding:0.5em;
+	}
+
+
+	.descripcion{
+	    order:1;
+	}
+
+	.footer-links h3{
+		font-size: 1em;
+	}
+
+	.footer-links a{
+		font-size: 0.8em;
+	}
+
+
+}
+
+
+
+
+
+

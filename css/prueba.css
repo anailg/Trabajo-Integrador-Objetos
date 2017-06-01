@@ -1,0 +1,123 @@
+.*{
+    box-sizing: border-box;
+}
+
+html, body, ul {	
+    margin:0;
+    padding:0;
+    /*font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+	color:rgb(182,209,146);
+	display:block;
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("fontawesome-webfont.woff");
+}
+
+
+body {
+    background: white;
+}
+
+.container{
+        position: relative;
+        overflow: hidden;
+        width:100vw;        
+}
+
+/* ------------------ Header Style ---------------------------------------------*/
+.main-header{
+	width:100%;
+	position:relative;
+	float:left;
+	padding-bottom: 0px;
+}
+
+.logo {
+	position:relative;
+	width:25%;
+	height: auto;
+    display: inline-block;
+	margin-left:40%;
+}
+
+.main-nav{
+	position:relative
+	width: 90%;
+    height:auto;
+	padding: 0% 2% 0% 2%;
+}
+
+.bar-nav{
+    background-color: #47473D;
+  
+    list-style-type: none;
+    
+    width:100%;
+    display: flex;
+    flex-flow:row wrap;  
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bar-nav li{
+	width:20%;
+    padding:0em;
+}
+
+
+.icono{
+    order:1;
+    flex-grow:1;
+    font-family: "FontAwesome", sans-serif;
+    font-size: 100%;
+    padding: 1em 1em;
+}
+.descripcion{
+    order:2;
+    flex-grow:0.8;
+}
+
+.bar-nav a {    
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+    padding: 1em 1em;
+}
+
+
+.bar-nav a:hover{
+    background-color: rgb(182,209,146);
+}
+
+/* ---------------------------- Promociones, destacados, etc. DIV  inferior -----------------*/
+.main-promo{
+    position:relative;
+    width:100%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.promotion{
+    width:44%;
+    padding: 1em;
+}
+
+
+.main-promo h2{
+    text-align:center;
+    color:rgb(182,209,146);
+}
+
+.main-promo img{    
+    width:100%;
+    height:auto;
+}

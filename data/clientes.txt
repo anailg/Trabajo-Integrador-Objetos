@@ -1,0 +1,1 @@
+{"id":"592c59d8e24c0","email":"anailg@fibertel.com.ar","password":"123456","nombre":"Ana","apellido":"Ibarlucia","sexo":"femenino","fechanac":"","direccion":"santa fe 1234","codpostal":"1234","localidad":"aaa","provincia":"Capital Federal","avatar":""}
