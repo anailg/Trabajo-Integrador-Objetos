@@ -1,0 +1,30 @@
+Entrega Sprint 3
+
+Equipo: Nico Duca, Mary Poslosky, Ana Ibarlucia
+
+Fecha de entrega 13/6 (Martes)
+
+Link: https://github.com/anailg/Trabajo-Integrador-Objetos.git
+
+Consignas:
+
+- El cliente pide que el código esté organizado bajo el paradigma de Programación Orientado a Objetos para mejorar la comunicación.
+
+		Si. Se uso el modelo presentado por Dario.
+
+- El cliente pide que bajo la misma estructura de objetos el soporte donde se guarda la información sea una base de datos SQL.
+
+	Si se agregaron las clases correspondientes al respositorio MySQL que inserta en y busca de la tabla de clientes de la base de datos llamada 'cooking_company'
+
+- El cliente pide que haya un script php que se encargue de:
+
+- Crear las tablas en la base de datos
+- Migrar los usuarios ya existentes en JSON a la nueva base de datos
+
+	Para esto hay un mini menu que se llama 'menuMigrar.php' que corre independientemente de la aplicacion pero que internamente usa las clases definidas en la aplicacion por lo tanto debe correrse desde el mismo directorio de la aplicacion.
+
+Optativo:
+
+- El cliente pide tener en consideración que así como el código ahora funcionará con una base de datos MySQL, nos gustaría que el código este preparado para que cambiar el tipo de base de datos sea sencillo. Por ejemplo, si quisiéramos volver a JSON, debería ser algo sencillo.
+
+	Esto funciona, para ello hay editar el archivo 'soporte.php' y cambiar la variable $tipoRepositorio. 
