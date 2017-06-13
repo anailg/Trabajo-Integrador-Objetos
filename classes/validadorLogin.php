@@ -27,7 +27,8 @@
 
 	            if (!password_verify($datos["password"], $cliente->getPassword())) {
 	                $errores["password"] ="La contraseña es incorrecta";
-	            }
+	            } 
+
 	        }
 
 	        return $errores;

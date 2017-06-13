@@ -1,0 +1,52 @@
+.*{
+    box-sizing: border-box;
+}
+
+html, body, ul {	
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+	color:rgb(182,209,146);
+	display:block;
+	margin-left: 20vw;
+}
+
+
+body {
+    background: white;
+}
+
+.container{
+        position: relative;
+        overflow: hidden;
+        width:100vw;                
+}
+.container-2{
+        position: relative;
+        overflow: hidden;
+        width:100%; 
+        margin-left: 5%; 
+        padding-bottom: 2em;     
+}
+
+.caja {
+		border-style:solid;
+		border-color: #47473D; /* grey*/
+		width: 50%;
+		padding:2%;
+		margin-left:10%;
+		position: relative;
+}
+
+.btn_continuar a {
+	text-decoration:none;
+	color:black;
+	border: 2px solid black;
+	background-color: rgb(240,239,239);
+	padding: 0 1em;
+	margin-left: 25% ;
+}
+

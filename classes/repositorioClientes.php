@@ -1,4 +1,5 @@
 <?php
+	require_once("cliente.php");
 
 	abstract class RepositorioClientes {
 

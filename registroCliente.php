@@ -31,10 +31,10 @@
 		        {    
 		            //Primero: creo la instancia
 		            $cliente = new Cliente($arr_cliente);
-		            
+	            
 		            // Seteo la password para que se guarde hasheada
-		            $cliente->setPassword($_POST["password"]); 
-
+		            $cliente->setPassword($_POST["password"]);
+		           
 					//Guardo el Avatar a su lugar y seteo el path de donde quedo
 					$cliente->setAvatar($cliente->guardarAvatar($_FILES["avatar"]));
 		            
