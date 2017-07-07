@@ -52,44 +52,47 @@
 								$cliente->getAvatar()."')";
 
 			try {
+
+				$db -> beginTransaction();
+
 				$db -> exec($sql);
 				$idCliente = $db->lastInsertId();				
-			}
-			catch(PDOException $e) {
-    			return $e->getMessage();  		
-    		};
-
+			
     		
-    		$calle=$cliente->getDireccion();
-    		$codPostal=$cliente->getCodPostal();
-    		$localidad=$cliente->getLocalidad();
-    		$provincia=$cliente->getProvincia();
+	    		$calle=$cliente->getDireccion();
+	    		$codPostal=$cliente->getCodPostal();
+	    		$localidad=$cliente->getLocalidad();
+	    		$provincia=$cliente->getProvincia();
 
-    		// Si la direccion de envio no fue especificada (optativa) no inserto en la tabla
-    		// de direcciones
-    		if (($calle=='') || ($localidad=='') ||($provincia=='')) { return true; }
-    		
-    		try { 
+	    		// Si la direccion de envio no fue especificada (optativa) no inserto en la tabla de direcciones
+	    		if (!(($calle=='') || ($localidad=='') ||($provincia==''))) {  
+    			
+    				$principal=true;
 
-    			$principal=true;
+					$stmt = $db -> prepare ("INSERT INTO direccion ".
+												" VALUES (default,:id_cliente,:principal,:calle,".
+												         ":codigo_postal,:localidad,:provincia)");
 
-				$stmt = $db -> prepare ("INSERT INTO direccion ".
-											" VALUES (default,:id_cliente,:principal,:calle,".
-											         ":codigo_postal,:localidad,:provincia)");
+					$stmt->bindParam(':id_cliente',$idCliente,PDO::PARAM_INT);
+					$stmt->bindParam(':principal',$principal,PDO::PARAM_BOOL);
+					$stmt->bindParam(':calle',$calle,PDO::PARAM_STR);
+					$stmt->bindParam(':codigo_postal',$codPostal,PDO::PARAM_STR);
+					$stmt->bindParam(':localidad',$localidad,PDO::PARAM_STR);
+					$stmt->bindParam(':provincia',$provincia,PDO::PARAM_STR);
 
-				$stmt->bindParam(':id_cliente',$idCliente,PDO::PARAM_INT);
-				$stmt->bindParam(':principal',$principal,PDO::PARAM_BOOL);
-				$stmt->bindParam(':calle',$calle,PDO::PARAM_STR);
-				$stmt->bindParam(':codigo_postal',$codPostal,PDO::PARAM_STR);
-				$stmt->bindParam(':localidad',$localidad,PDO::PARAM_STR);
-				$stmt->bindParam(':provincia',$provincia,PDO::PARAM_STR);
+					$stmt -> execute();
+				}
 
-				$stmt -> execute();
+				$db -> commit();
 
 				return true;
-			}
-			catch(PDOException $e) {
-    				return $e->getMessage();  		
+
+			} catch(PDOException $e) {
+				
+				$error = $e->getMessage();
+				$db-> rollback();
+    			return $error;
+
     		};
 		 
 		}
@@ -137,6 +140,22 @@
 			}	
 	        
 	    }
+
+	    public function contarClientes(){
+		
+			$conn = new DB;
+			$db = $conn->getConn();
+
+	    	$sql = "SELECT count(*) as cantidad FROM cliente ".
+	    				" WHERE 1=1";
+
+	    	$query=$db->query($sql);
+
+			$clientes = $query->fetch(PDO::FETCH_ASSOC);
+
+			return $clientes['cantidad'];				
+
+		}
 
 	}
 

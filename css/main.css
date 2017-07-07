@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 html, body, ul {	
     margin:0;
     padding:0;
@@ -10,7 +11,7 @@ html, body, ul {
 }
 
 h1{
-	color:rgb(182,209,146);
+	color:rgb(182,209,146); /*verde*/
 	display:block;
 }
 
@@ -38,13 +39,28 @@ body {
 	margin-bottom: 1em;
 }
 
+
 .logo {
 	position:relative;
 	width:16%;
 	height: auto;
 	float:left;
+	margin: 3.5% 0 0 0;
+	border-radius: 9%;
 }
 
+.usuarios{
+	display:inline-block;
+	position:relative;
+	float:right;
+	margin-top: 4px;
+	margin-right:5%;
+}
+
+.usuarios a{
+	color: rgb(182,209,146); 
+    font-weight: bold;
+}
 
 .main-nav{
 	position:relative;
@@ -134,7 +150,7 @@ body {
 /* ------------------- Banner --------------------------------- */
 
 .banner{
-	width: 98%;
+	width: 98%;	
 	position:relative;
 	overflow: hidden;
 	margin-left: 2%;
@@ -142,7 +158,7 @@ body {
 
 .banner img{
 	width:24%;
-	height:auto; 
+	height:auto; 	
 	float:left;
 }
 
@@ -290,6 +306,7 @@ body {
 }
 .container-formulario h1{
 	margin-left: 2%;
+	margin-top: 0;
 }
 
 .sign-in-container{
@@ -330,19 +347,27 @@ body {
         align-items: center;
 }
 
+.crear-cliente h2{
+	margin-top: 0;
+}
+
 .mensaje-error {
 	width:60%;
 	margin-top: 0;
-	margin-right:20%;
+	margin-left:0%;
 	padding-top: 0;
-	text-align:center;
+	text-align:left;
 }
 .mensaje-error ul {
 	color: red;
+	list-style-type: none;
 }
+
+
 .mensaje-error h3{
-	margin-top: 0;
-	padding-top: 0:;
+	margin: 0;
+	padding: 0;
+
 
 }
 
@@ -418,7 +443,8 @@ body {
 	}
 
 	.bar-nav li{
-		width:25%;
+		/*width:25%; Sin el pincelito de cambiar paleta*/
+		width:20%;
 	}
 
 	.icono{

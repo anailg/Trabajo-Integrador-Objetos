@@ -1,5 +1,5 @@
 <?php
-	require_once("soporte.php");	
+	require_once("soporte.php");
 ?>
 
 <!DOCTYPE html>
@@ -10,23 +10,28 @@
 	<title>Cooking Company</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link rel="stylesheet" type="text/css" href="css/extractoBootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">	
+	<link rel='stylesheet' type='text/css' id='paleta' class='paleta1' href='css/paletaColores1.css'>
+
 </head>
 
 <body>
 	<div class="container">
 
 		<?php
+			include "mostrarCantClientes.php";
 			include "header.php";
-		?>
+		?>	
 		
-		<div class="banner">
+		<div class="banner">				
 			<img src="images/imagenBanner1.jpg" alt="foto">	
 			<img src="images/imagenBanner2.jpg" alt="foto">				
 			<img src="images/imagenBanner3.jpg" alt="foto">	
 			<img src="images/imagenBanner4.jpg" alt="foto">
 		</div>
+
 
 		<div class="frases">
 			<div class="frase1">	
@@ -55,8 +60,7 @@
 				
 			</div>
 			
-		</div>
-			
+		</div>			
 
 		<section class="main-promo">
 			<article class="promotion" id="promo1">
@@ -87,8 +91,9 @@
 			include "footer.php";
 		?>
 
+		<script src="js/actualizarCantClientes.js"></script>
 		
-	</div>
+	</div>	
 
 </body>
 

@@ -4,7 +4,6 @@
 		<img src="images/logo.jpg" alt="logotipo" class="logo">					
 		
 		<div class="main-nav">
-
 		
 			<div class="main-login">  <!-- Abre Menu Registro/Login Principal-->
 		      <ul class="bar-login">
@@ -36,11 +35,30 @@
 					<li class="descripcion"><a href="#">Contacto</a></li>
 					<li class="icono"><a href="faq.php">&#xf128</a></li>				
 					<li class="icono"><a href="#">&#xf002</a></li>	
-					<li class="icono"><a href="#">&#xf07a</a></li>					
+					<li class="icono"><a href="#">&#xf07a</a></li> 
+					<li class="icono"><a href="#" onclick="cambiarPaleta()">&#xf1fc</a></li>					
 				</ul>
 			</nav>
 
 		</div>
+
+		
+		<script> 
+
+			function cambiarPaleta() {
+				
+			    var elemento = document.getElementById("paleta");
+			    if (elemento.className == "paleta1") {
+			      	elemento.className = "paleta2";
+			      	elemento.href="css/paletaColores2.css"
+			    } else {
+			      	elemento.className = "paleta1";
+			      	elemento.href="css/paletaColores1.css"
+				}
+			}
+
+		</script>
+
 
 	</header>
 

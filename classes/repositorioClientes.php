@@ -33,4 +33,18 @@
 
 	        return false;
 	    }
+
+	    public function contarClientes() {
+	    	
+	       
+	        $clientes = $this->traerTodosLosclientes();
+
+	        $cantidad=0;
+	        foreach($clientes as $cliente)
+	        {
+	            $cantidad+=1;	            
+	        }
+
+	        return $cantidad;
+	    }
 	}

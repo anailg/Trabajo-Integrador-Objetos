@@ -1,5 +1,23 @@
 <?php
 
+	$titulo_error='';
+	$arr_cliente=clear_inputValues();
+	$errores=clear_inputValues();
+
+	if (isset($_SESSION['titulo_error'])) {
+		$titulo_error=$_SESSION['titulo_error'];
+	}
+
+	if (isset($_SESSION['errores'])) {
+		$errores=$_SESSION['errores'];	
+	}	
+
+	if (isset($_SESSION['arr_cliente'])) {
+		$arr_cliente=$_SESSION['arr_cliente'];
+	}
+
+	$_SESSION = array();
+
 function set_inputValues($input)
 {
 	$arr_cliente['id']=null;

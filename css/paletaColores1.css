@@ -1,0 +1,106 @@
+/*rgb(182,209,146) verde */
+/*#47473D grey */
+
+h1{
+	color:rgb(182,209,146); /*verde*/
+}
+
+body {
+    background: white;
+}
+
+.logo {
+	margin-top: 1.5%;
+	margin-left:0%;
+	margin-right: 0;
+	border-radius: 9%;
+}
+
+.main-nav{
+	margin: 6% 0% 0% 1%;
+}
+
+.usuarios a{
+	color: rgb(182,209,146); 
+    font-weight: bold;
+}
+
+.bar-login a {
+    color: rgb(182,209,146); 
+    font-weight: bold;
+}
+
+.bar-login a:hover{
+    color: #47473D;
+}
+
+.bar-nav{
+    background-color: #47473D;
+}
+
+
+.bar-nav a {
+    color: white;
+}
+
+.bar-nav a:hover{
+    background-color: rgb(182,209,146);
+}
+
+
+.frases{
+	background-color: rgb(240,239,239); /* light-light-grey;*/
+}
+
+/* ---------------------------- Promociones, destacados, etc. DIV  inferior -----------------*/
+
+.main-promo h2{
+    color:rgb(182,209,146);
+}
+
+
+/*---------------------- Footer ------------------------*/
+.main-footer{
+	/*background-color: rgb(240,239,239); light-light-grey*/
+	
+	border-top: solid;
+	border-color:#47473D; /* grey*/
+}
+
+.main-footer h3 {
+    color:#47473D; /* grey*/
+}
+
+.footer-links a{
+	color: rgb(182,209,146);  /*verde*/
+}
+
+.footer-links a:hover{
+    text-decoration: underline;
+    color:#47473D; /* grey*/
+}
+.cliente-antiguo, .cliente-nuevo, .crear-cliente{
+		border-style:solid;
+		border-color: #47473D; /* grey*/
+}
+
+/* ------------------ Formulario cliente nuevo -------------------*/
+
+.mensaje-error ul {
+	color: red;
+	list-style-type: none;
+}
+
+
+.form-alta .error {
+	color: red;
+}
+.btn_continuar a {
+	text-decoration:none;
+	color:black;
+	border: 2px solid black;
+	background-color: rgb(240,239,239);
+	padding: 0 1em;
+	margin: 0 46%;
+}
+

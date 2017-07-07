@@ -38,8 +38,10 @@
 	<title>Cooking Company - Sign-In</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel='stylesheet' type='text/css' id='paleta' class='paleta1' href='css/paletaColores1.css'>
+	
 </head>
 
 <body>

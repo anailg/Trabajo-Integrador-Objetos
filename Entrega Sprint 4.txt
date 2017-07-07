@@ -1,0 +1,25 @@
+Entrega Sprint 4
+
+Equipo: Nico Duca, Mary Poslosky, Ana Ibarlucia
+
+Fecha de entrega Viernes 7 de Julio
+
+Link: https://github.com/anailg/Trabajo-Integrador-Objetos.git
+
+
+Consignas:
+
+- El cliente pide agregar una validación del formulario de registración desde JS para evitar carga en el servidor y la recarga del sitio.
+
+- El cliente pide una opción en el sitio para alternar el "tema" con el que el sitio se carga. Debe haber definidas como mínimo 2 paletas de colores.
+
+- El cliente pide que haya una sección del sitio en la home que diga "Ya somos X usuarios". La cantidad de usuarios debe recargarse automáticamente cada 30 segundos pero no debe refrescarse el sitio por completo
+
+
+
+Optativos:
+
+- La validación de la registración debe chequear que el mail no exista en la base de datos.
+
+- La home debe contar con un "carrousel" de fotos.
+

@@ -12,24 +12,24 @@
 
 	        if (empty(trim($datos["nombre"])))
 	        {
-	            $errores["nombre"] = "Por favor completá tu nombre";
+	            $errores["nombre"] = "El nombre es requerido";
 	        }
 
 	        if (empty(trim($datos["apellido"])))
 	        {
-	            $errores["apellido"] = "Por favor completá tu apellido";
+	            $errores["apellido"] = "El apellido es requerido";
 	        }
 
 	        if (empty(trim($datos["email"])))
 	        {
-	            $errores["email"] = "Por favor ingresá un e-mail";
+	            $errores["email"] = "El email es requerido";
 	        }
 	        elseif (!filter_var($datos["email"], FILTER_VALIDATE_EMAIL)) {
-	            $errores["email"] = "Por favor ingresá un e-mail correcto";   
+	            $errores["email"] = "El email ingresado no es correcto";   
 	        }
 	        elseif ($repoClientes->existeElMail($datos["email"]))
 	        {
-	            $errores["email"] = "El e-mail ya esta registrado";      
+	            $errores["email"] = "El email ya esta registrado";      
 	        }
 
 	        /* --- Validaciones password ------*/		
