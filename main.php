@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/extractoBootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel='stylesheet' type='text/css' id='paleta' class='paleta1' href='css/paletaColores1.css'>
+	<link rel="stylesheet" type="text/css" href="css/carrusel.css">
 
 </head>
 
@@ -25,11 +26,35 @@
 			include "header.php";
 		?>	
 		
-		<div class="banner">				
-			<img src="images/imagenBanner1.jpg" alt="foto">	
-			<img src="images/imagenBanner2.jpg" alt="foto">				
-			<img src="images/imagenBanner3.jpg" alt="foto">	
-			<img src="images/imagenBanner4.jpg" alt="foto">
+		<div id="carrusel">
+			<div class="banner">				
+				<div class="imagenes">            
+		            <img src="images/banner/imagenBanner1.jpg" alt="foto"><!-- 
+		          --><img src="images/banner/imagenBanner2.jpg" alt="foto"><!--  
+		          --><img src="images/banner/imagenBanner3.jpg" alt="foto"><!--
+		          --><img src="images/banner/imagenBanner4.jpg" alt="foto"><!-- 
+		          --><img src="images/banner/imagenBanner3.jpg" alt="foto"><!-- 
+		          --><img src="images/banner/imagenBanner6.jpg" alt="foto"><!--    
+		          --><img src="images/banner/imagenBanner7.jpg" alt="foto"><!-- 
+		          --><img src="images/banner/imagenBanner8.jpg" alt="foto"><!--
+		          --><img src="images/banner/imagenBanner9.jpg" alt="foto"><!-- 
+		          --><img src="images/banner/imagenBanner10.jpg" alt="foto"><!--       
+		          --><img src="images/banner/imagenBanner11.jpg" alt="foto"><!-- 
+		          --><img src="images/banner/imagenBanner12.jpg" alt="foto"><!--
+		          --><img src="images/banner/imagenBanner13.jpg" alt="foto"><!-- 
+		          --><img src="images/banner/imagenBanner14.jpg" alt="foto"><!--       
+		          --><img src="images/banner/imagenBanner15.jpg" alt="foto"><!-- 
+		          --><img src="images/banner/imagenBanner16.jpg" alt="foto"><!--
+		          --><img src="images/banner/imagenBanner17.jpg" alt="foto"><!-- 
+		          --><img src="images/banner/imagenBanner18.jpg" alt="foto"><!--
+		          --><img src="images/banner/imagenBanner19.jpg" alt="foto"><!-- 
+		          --><img src="images/banner/imagenBanner20.jpg" alt="foto"><!--  
+		          --><img src="images/banner/imagenBanner1.jpg" alt="foto"><!--  
+		          --><img src="images/banner/imagenBanner3.jpg" alt="foto"><!--
+		          --><img src="images/banner/imagenBanner3.jpg" alt="foto"><!-- 
+		          --><img src="images/banner/imagenBanner4.jpg" alt="foto">
+		      </div> 
+			</div>
 		</div>
 
 
@@ -91,7 +116,14 @@
 			include "footer.php";
 		?>
 
-		<script src="js/actualizarCantClientes.js"></script>
+		<script src="js/actualizarCantClientes.js"></script> 
+
+		
+		<script src="js/carrusel.js"></script>
+			
+			
+		</script> -->
+
 		
 	</div>	
 

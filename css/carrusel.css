@@ -1,0 +1,29 @@
+#carrusel {
+  position: relative;
+  width:100%;
+  height: 350px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#carrusel .banner {
+  margin:0;
+  padding:0;
+  width:100%;
+  margin-left: 0%;
+  position: absolute;
+  white-space: nowrap;
+  transition: all 0s;
+}
+
+
+#carrusel .imagenes {
+  margin: 0; 
+}
+
+.imagenes img {
+  width:25%;
+  height:auto;
+}
+
+

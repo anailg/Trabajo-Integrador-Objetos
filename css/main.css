@@ -149,7 +149,7 @@ body {
 
 /* ------------------- Banner --------------------------------- */
 
-.banner{
+/*.banner{
 	width: 98%;	
 	position:relative;
 	overflow: hidden;
@@ -160,7 +160,7 @@ body {
 	width:24%;
 	height:auto; 	
 	float:left;
-}
+}*/
 
 /*---------------- Frases marketing ----------------------------------*/
 .frases{
