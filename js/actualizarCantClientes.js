@@ -7,7 +7,7 @@
 
 		//entro=0;
 
-		setInterval(actualizarCartel, 3000);
+		setInterval(actualizarCartel, 30000);
 
 		function actualizarCartel(){
 

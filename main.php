@@ -33,7 +33,7 @@
 		          --><img src="images/banner/imagenBanner2.jpg" alt="foto"><!--  
 		          --><img src="images/banner/imagenBanner3.jpg" alt="foto"><!--
 		          --><img src="images/banner/imagenBanner4.jpg" alt="foto"><!-- 
-		          --><img src="images/banner/imagenBanner3.jpg" alt="foto"><!-- 
+		          --><img src="images/banner/imagenBanner5.jpg" alt="foto"><!-- 
 		          --><img src="images/banner/imagenBanner6.jpg" alt="foto"><!--    
 		          --><img src="images/banner/imagenBanner7.jpg" alt="foto"><!-- 
 		          --><img src="images/banner/imagenBanner8.jpg" alt="foto"><!--
