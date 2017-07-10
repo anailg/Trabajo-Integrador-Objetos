@@ -81,9 +81,16 @@ body {
     text-decoration: underline;
     color:white;
 }
+
+
 .cliente-antiguo, .cliente-nuevo, .crear-cliente{
 		border-style:solid;
 		border-color: #47473D; /* grey*/
+}
+
+.sign-in-container a {
+	color:rgb(182,209,146); 
+
 }
 
 /* ------------------ Formulario cliente nuevo -------------------*/

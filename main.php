@@ -13,9 +13,8 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">
 	<link rel="stylesheet" type="text/css" href="css/extractoBootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel='stylesheet' type='text/css' id='paleta' class='paleta1' href='css/paletaColores1.css'>
+	<link rel='stylesheet' type='text/css' id='paleta' class='paleta1' href='css/paleta1.css'>
 	<link rel="stylesheet" type="text/css" href="css/carrusel.css">
-
 </head>
 
 <body>
@@ -50,7 +49,7 @@
 		          --><img src="images/banner/imagenBanner19.jpg" alt="foto"><!-- 
 		          --><img src="images/banner/imagenBanner20.jpg" alt="foto"><!--  
 		          --><img src="images/banner/imagenBanner1.jpg" alt="foto"><!--  
-		          --><img src="images/banner/imagenBanner3.jpg" alt="foto"><!--
+		          --><img src="images/banner/imagenBanner2.jpg" alt="foto"><!--
 		          --><img src="images/banner/imagenBanner3.jpg" alt="foto"><!-- 
 		          --><img src="images/banner/imagenBanner4.jpg" alt="foto">
 		      </div> 
@@ -115,15 +114,9 @@
 		<?php
 			include "footer.php";
 		?>
-
-		<script src="js/actualizarCantClientes.js"></script> 
-
 		
+		<script src="js/actualizarCantClientes.js"></script> 
 		<script src="js/carrusel.js"></script>
-			
-			
-		</script> -->
-
 		
 	</div>	
 

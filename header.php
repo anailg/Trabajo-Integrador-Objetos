@@ -13,14 +13,9 @@
 		          <?php if($auth->estaLogueado()): ?>
 		              <li><a href="logout.php">Cerrar Sesion</a></li>
 		          <?php endif; ?>	
-		          <?php if($auth->estaLogueado())
-						{ 	
-						// en vez de crear una instancia del repositorio y buscar el nombre del cliente directamente cree otra cookie y saco el nombre de ahi y asi me evito todo esto:
-							//$repoClientes = $repo->getRepositorioClientes();
-							//$cliente=$auth->traerClienteLogueado($repoClientes);
-							//<li>Bienvenido <?php echo $cliente->getNombre(); 
+		          <?php if($auth->estaLogueado()){
 							$cliente=$auth->nombreClienteLogueado();?>  
-		                  <li>Bienvenido <?php echo $cliente; ?></li>
+		                  	<li>Bienvenido <?php echo $cliente; ?></li>
 		          <?php } ?>  		          	                  
 		      </ul>
 		    </div>  <!-- Cierra Menu Registro/Login Principal-->
@@ -36,30 +31,15 @@
 					<li class="icono"><a href="faq.php">&#xf128</a></li>				
 					<li class="icono"><a href="#">&#xf002</a></li>	
 					<li class="icono"><a href="#">&#xf07a</a></li> 
-					<li class="icono"><a href="#" onclick="cambiarPaleta()">&#xf1fc</a></li>					
+					<li class="icono" id="btnPaleta"><a href="#">&#xf1fc</a></li>					
 				</ul>
 			</nav>
 
 		</div>
-
 		
-		<script> 
+		<script src="js/setPaleta.js"></script> 
 
-			function cambiarPaleta() {
-				
-			    var elemento = document.getElementById("paleta");
-			    if (elemento.className == "paleta1") {
-			      	elemento.className = "paleta2";
-			      	elemento.href="css/paletaColores2.css"
-			    } else {
-			      	elemento.className = "paleta1";
-			      	elemento.href="css/paletaColores1.css"
-				}
-			}
-
-		</script>
-
-
+	
 	</header>
 
 

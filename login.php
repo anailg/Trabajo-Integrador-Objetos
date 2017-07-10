@@ -40,7 +40,7 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">	
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel='stylesheet' type='text/css' id='paleta' class='paleta1' href='css/paletaColores1.css'>
+	<link rel='stylesheet' type='text/css' id='paleta' class='paleta1' href='css/paleta1.css'>
 	
 </head>
 
@@ -88,7 +88,7 @@
 
 				<h2>Soy nuevo</h2>
 
-				<h3> Porque crear una cuenta?</h3>
+				<h3> ¿Porque crear una cuenta?</h3>
 				<p> Te permite hacer tus pedidos fácil y rápido </p>
 				<p> Podés subscribirte para recibir novedades y recetas exclusivas</p>
 				<p> Podés participar de sorteos</p>

@@ -1,0 +1,29 @@
+pulll
+php artisan migrate
+php composer install
+
+
+
+CURL = Ajax PHP (LARAVEL)
+
+
+
+REACT
+
+instalar node 
+	node -
+
+'composer' para react:
+	npm -v
+
+	
+
+
+
+Server:
+
+000 Webhost (gratuito)
+
+Forge - Laravel
+
+INSERT INTO `cliente`(`id`, `email`, `password`, `nombre`, `apellido`, `sexo`, `fechanacimiento`, `avatar`) VALUES (null,'cosa@mail.com','123456','cosa','cualquiera','M','2000-01-01',null)

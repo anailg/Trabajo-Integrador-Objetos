@@ -1,10 +1,6 @@
 ;(function (window, document, undefined) {
 
-  
-	// window.onload = function () {
-
-		//console.log('Actualizar cantidad de clientes')
-
+  	
 		//entro=0;
 
 		setInterval(actualizarCartel, 30000);
@@ -32,7 +28,6 @@
 	    	req.send()
  
 		} 
-	// }
 
 }(window, document));
 

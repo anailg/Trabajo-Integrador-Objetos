@@ -1,29 +1,45 @@
 ;(function (window, document, undefined) {
 
-	function cambiarPaleta() {
-		var paletaActual=checkpaleta()
+	
+
+	var botonPaleta = document.getElementById("btnPaleta");	    
+
+	botonPaleta.addEventListener('click', function (evento) {
+
+	    evento.preventDefault();
+
 	    var elemento = document.getElementById("paleta");
+		console.log(elemento)
+
+		var paletaActual=checkPaleta(elemento)
+		console.log(paletaActual)
+	    
 	    if (paletaActual == "paleta1") {
 	      	elemento.className = "paleta2";
-	      	elemento.href="css/paletaColores2.css"
-	      	setCookie("paleta", paleta2, 1);	      	
+	      	elemento.href="css/paleta2.css"
+	      	setCookie("paleta", "paleta2", 1);	      	
 	    } else {
 	      	elemento.className = "paleta1";
-	      	elemento.href="css/paletaColores1.css"
-	      	setCookie("paleta", paleta1, 1);
+	      	elemento.href="css/paleta1.css"
+	      	setCookie("paleta", "paleta1", 1);
 		}
-	}
 
-	function setearPaleta() {
-		var paletaActual=checkpaleta()
-	    var elemento = document.getElementById("paleta");
-	    if (paletaActual == "paleta1") {
-	      	elemento.href="css/paletaColores1.css"   	
-	    } else {
-	      	elemento.href="css/paletaColores2.css"
-		}
-	}
+	})
+
+	function checkPaleta(elemento) {
+    	
+        var paleta = getCookie("paleta");
+        console.log('Cookie value:'+paleta)
+        if (paleta == "") {
+        	console.log('elemento: '+elemento.className)
+             paleta = elemento.className;           //"paleta1" ; 
+             setCookie("paleta", paleta, 1);
+        }
+        console.log('Return:'+paleta)
+        return paleta;
+    }
 	
+		
 	function getCookie(cname) {
         var name = cname + "=";
         var ca = document.cookie.split(';');
@@ -39,16 +55,16 @@
         return "";
     }
 
-    function checkPaleta() {
-    	
-        var paleta = getCookie("paleta");
-        if (paleta = "") {
-            paleta = "paleta1" ;
-            setCookie("paleta", paleta, 1);
-            }
-        }
-        return paleta
-    }
+    function setCookie(cname, cvalue, exdays) {
+	    var d = new Date();
+	    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+	    var expires = "expires="+ d.toUTCString();
+	    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+    
 
 	
 }(window, document));
+
+
